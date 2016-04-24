@@ -110,6 +110,7 @@ body {
     line-height: 1.4em;
     border: 1px solid red;
     min-width: 1000px;
+    background: #f8f8f8;
 }
 
 .top-bar {
@@ -119,7 +120,7 @@ body {
     font-size: .62em;
     letter-spacing: .15em;
     position: relative;
-    padding: .8em;
+    padding: .9em;
 }
 
 .top-bar .top-bar-content /* ul */{
@@ -140,20 +141,129 @@ body {
 
 .top-bar #social-media {
     position: absolute;
-    left: 50px;
-    top: 2px;
+    left: 100px;
+    top: 3px;
 }
 
 .top-bar #site-links {
     position: absolute;
-    right: 50px;
-    top: 2px;
+    right: 100px;
+    top: 3px;
 }
 
 #sitesearch {
     margin-right: 5em;
 }
 
+/* Header */
+header {
+    border: 1px solid red;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Cinzel";
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: .25em;
+    font-size: 2em;
+    border: 1px solid blue;
+    padding: .5em 0em 0em 0em;
+}
+
+/* Sub-Header */
+.sub-header {
+    border: 1px solid green;
+    text-align: center;
+    position: relative;
+    font-family: "Gill Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+}
+
+.sub-header a {
+    text-decoration: none;
+}
+
+.sub-header .main-nav-section /* ul */ {
+    list-style-type: none;
+    display: inline;
+}
+
+.sub-header li {
+    display: inline-block;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+#date {
+    position: absolute;
+    left: 100px;
+    font-size: .6em;
+    transform: translateY(10%);
+}
+
+#site-nav-links {
+    position: absolute;
+    transform: translate(-60%,10%);
+}
+
+#site-nav-links a {
+    color: #888888;
+    font-size: .75em;
+}
+
+#site-nav-links a:hover {
+    color: #000;
+}
+
+#site-nav-links li ul {
+    display: none;
+    position: absolute;
+    border: 1px solid red;
+    text-align: left;
+    left: -4em;
+    font-size: .8em;
+    width: 150px;
+    padding-top: 20px;
+    font-size: 1em;
+}
+
+#site-nav-links li:hover ul {
+    display: block;
+}
+
+#site-nav-links li li {
+    float: none;
+    margin-left: -2em;
+}
+
+#subscribe {
+    position: absolute;
+    right: 100px;
+    top: 22px;
+}
+
+#subscribe a {
+    color: #fff;
+    font-size: .6em;
+}
+
+#ellipse {
+    position: relative;
+    width: 90px;
+    height: 15px;
+    background: black;
+    -moz-border-radius: 30px;
+    -webkit-border-radiu: 30px;
+    border-radius: 30px;
+}
+
+#ellipse li {
+    position: absolute;
+    transform: translateY(-15%);
+    left: 3px;
+}
 
 /* ==========================================================================
    Helper classes

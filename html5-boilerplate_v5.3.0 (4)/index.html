@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -39,24 +40,34 @@
 
       <header>
         <h1>Kinfolk</h1>
+      </header>
+      <section class="sub-header">
        <nav class="main-nav">
-        <ul>
-          <div class="main-nav-section">
-            <li><ins datetime="2016-04-21">THU APR 21</ins></li>
+        <ul class="ul-nav">
+          <div class="main-nav-section" id="date">
+            <li>Sun 24 Apr</li>
           </div>
-          <div class="main-nav-section">
-            <li id="magazine"><a href="#">Magazine</a></li>
+          <div class="main-nav-section" id="site-nav-links">
+            <li id="magazine"><a href="#">Magazine</a>
+              <ul>
+                <li><a>Subscribe</a></li>
+                <li><a>Current Issue</a></li>
+                <li><a>All Issues</a></li>
+              </ul>
+            </li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Films</a></li>
             <li><a href="#">Stories</a></li>
           </div>
-          <div class="main-nav-section">
-            <lia><a href="#">Subscribe</a></li>
+          <div class="main-nav-section" id="subscribe">
+            <a href="#"><div id="ellipse">
+              <li>Subscribe</li>
+            </div></a>
           </div>
         </ul>
        </nav>
-      </header>
+      </section>
 
       <section class="slideshow">
         <img src="#">
