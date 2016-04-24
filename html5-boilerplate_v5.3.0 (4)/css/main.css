@@ -108,7 +108,6 @@ body {
     margin-top: 0em;
     font-family: Times, serif;
     line-height: 1.4em;
-    border: 1px solid red;
     min-width: 1000px;
     background: #f8f8f8;
 }
@@ -156,9 +155,6 @@ body {
 }
 
 /* Header */
-header {
-    border: 1px solid red;
-}
 
 header h1 {
     text-align: center;
@@ -167,13 +163,11 @@ header h1 {
     font-weight: bolder;
     letter-spacing: .25em;
     font-size: 2em;
-    border: 1px solid blue;
     padding: .5em 0em 0em 0em;
 }
 
 /* Sub-Header */
 .sub-header {
-    border: 1px solid green;
     text-align: center;
     position: relative;
     font-family: "Gill Sans", sans-serif;
@@ -220,7 +214,6 @@ header h1 {
 #site-nav-links li ul {
     display: none;
     position: absolute;
-    border: 1px solid red;
     text-align: left;
     left: -4em;
     font-size: .8em;
@@ -241,7 +234,7 @@ header h1 {
 #subscribe {
     position: absolute;
     right: 100px;
-    top: 22px;
+    top: 8px;
 }
 
 #subscribe a {
@@ -263,6 +256,15 @@ header h1 {
     position: absolute;
     transform: translateY(-15%);
     left: 3px;
+}
+
+.slideshow {
+    margin-top: 4em;
+}
+
+.slideshow img {
+    width: 50%;
+    float: left;
 }
 
 /* ==========================================================================
