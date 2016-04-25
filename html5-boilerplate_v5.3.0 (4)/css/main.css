@@ -112,6 +112,8 @@ body {
     background: #f8f8f8;
 }
 
+/* Top Bar */
+
 .top-bar {
     background: #e9e9e9;
     font-family: "Gill Sans", sans-serif;
@@ -162,17 +164,19 @@ header h1 {
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: .25em;
-    font-size: 2em;
+    font-size: 2.5em;
     padding: .5em 0em 0em 0em;
 }
 
-/* Sub-Header */
+/* Main-Nav */
+
 .sub-header {
     text-align: center;
     position: relative;
     font-family: "Gill Sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: .07em;
+    z-index: 20;
 }
 
 .sub-header a {
@@ -199,12 +203,12 @@ header h1 {
 
 #site-nav-links {
     position: absolute;
-    transform: translate(-60%,10%);
+    transform: translate(-58%,10%);
 }
 
 #site-nav-links a {
     color: #888888;
-    font-size: .75em;
+    font-size: .9em;
 }
 
 #site-nav-links a:hover {
@@ -217,7 +221,7 @@ header h1 {
     text-align: left;
     left: -6em;
     font-size: .8em;
-    width: 175px;
+    width: 190px;
     padding: 1.5em;
     font-size: 1em;
     background: #f8f8f8;
@@ -264,6 +268,8 @@ header h1 {
     left: 3px;
 }
 
+/* Main Content Images */
+
 .slideshow {
     margin-top: 4em;
 }
@@ -273,6 +279,7 @@ header h1 {
     position: relative;
     float: left;
     width: 50%;
+    z-index: 10;
 }
 
 .slideshow .main-image img {
@@ -289,7 +296,6 @@ header h1 {
     width: 100%;
     overflow: auto;
 }
-
 
 .slideshow .main-image figcaption h2, h3, a {
     font-family: "Gill Sans";
@@ -315,6 +321,28 @@ header h1 {
     font-size: .5em;
     color: #fff;
 }
+
+/* Stories */
+
+.main-content {
+    border: 1px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story {
+    border: 1px solid red;
+    width: 40%;
+    float: left;
+    padding: .5em;
+}
+
+.story img {
+    width: 100%;
+}
+
+/* Page Articles */
+
 
 
 /* ==========================================================================
