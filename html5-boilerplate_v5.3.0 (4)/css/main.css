@@ -108,7 +108,7 @@ body {
     margin-top: 0em;
     font-family: Times, serif;
     line-height: 1.4em;
-    min-width: 1200px;
+    min-width: 1000px;
     background: #f8f8f8;
 }
 
@@ -247,6 +247,13 @@ header h1 {
     top: 8px;
 }
 
+#subscribe i {
+    padding: 2em;
+    color: white;
+    position: absolute;
+    transform: translate(-25%,-27.5%);
+}
+
 #subscribe a {
     color: #fff;
     font-size: .6em;
@@ -330,6 +337,10 @@ header h1 {
     margin-right: auto;
 }
 
+.heading-bar {
+    clear: both;
+}
+
 .story {
     border: 1px solid red;
     width: 40%;
@@ -342,9 +353,6 @@ header h1 {
 }
 
 /* Page Articles */
-
-.city-guides {
-    clear: both;
 }
 
 /* ==========================================================================
