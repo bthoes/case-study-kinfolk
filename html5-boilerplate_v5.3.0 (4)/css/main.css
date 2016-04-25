@@ -108,7 +108,7 @@ body {
     margin-top: 0em;
     font-family: Times, serif;
     line-height: 1.4em;
-    min-width: 1000px;
+    min-width: 1200px;
     background: #f8f8f8;
 }
 
@@ -215,11 +215,17 @@ header h1 {
     display: none;
     position: absolute;
     text-align: left;
-    left: -4em;
+    left: -6em;
     font-size: .8em;
-    width: 150px;
-    padding-top: 20px;
+    width: 175px;
+    padding: 1.5em;
     font-size: 1em;
+    background: #f8f8f8;
+    border: 1px solid #c0c0c0;
+}
+
+#site-nav-links li ul li:nth-of-type(3) {
+    text-decoration: none;
 }
 
 #site-nav-links li:hover ul {
@@ -228,7 +234,7 @@ header h1 {
 
 #site-nav-links li li {
     float: none;
-    margin-left: -2em;
+    border-bottom: .05px solid #a9a9a9;
 }
 
 #subscribe {
@@ -262,10 +268,54 @@ header h1 {
     margin-top: 4em;
 }
 
-.slideshow img {
-    width: 50%;
+.slideshow .main-image {
+    margin: 0em;
+    position: relative;
     float: left;
+    width: 50%;
 }
+
+.slideshow .main-image img {
+    display: block;
+}
+
+.slideshow .main-image figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    padding: 1em;
+    background: hsla(359, 0%, 0%, 0.4);
+    color: #fff;
+    width: 100%;
+    overflow: auto;
+}
+
+
+.slideshow .main-image figcaption h2, h3, a {
+    font-family: "Gill Sans";
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: .1em;
+}
+
+.slideshow .main-image figcaption h2 {
+    font-size: .9em;
+}
+
+.slideshow .main-image figcaption h3 {
+    font-size: .5em;
+    color: #c0c0c0;
+}
+
+.slideshow .main-image figcaption p {
+    font-family: "Garamond";
+}
+
+.slideshow .main-image figcaption a {
+    font-size: .5em;
+    color: #fff;
+}
+
 
 /* ==========================================================================
    Helper classes
