@@ -343,7 +343,9 @@ header h1 {
 
 /* Page Articles */
 
-
+.city-guides {
+    clear: both;
+}
 
 /* ==========================================================================
    Helper classes
