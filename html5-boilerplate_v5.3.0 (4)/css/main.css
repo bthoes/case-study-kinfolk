@@ -331,12 +331,14 @@ header h1 {
     color: #fff;
 }
 
+/* Section Bar */
+
 .section-bar {
     clear: both;
     position: relative;
     margin-bottom: 4em;
     border: 1px solid green;
-    z-index: 10;
+    line-height: 2em;
 }
 
 .section-bar ul {
@@ -348,18 +350,24 @@ header h1 {
     display: inline-block;
 }
 
+.section-bar a {
+    text-decoration: none;
+}
+
 #left-link {
   position: absolute;
+  top: 0px;
   left: 100px;
 }
 
 #center-link {
     position: absolute;
-    transform: translateX(500%);
+    top: 0px;
 }
 
 #right-link {
     position: absolute;
+    top: 0px;
     right: 100px;
 }
 
@@ -367,24 +375,68 @@ header h1 {
 
 .main-content {
     clear: both;
-    border: 1px solid blue;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.heading-bar {
-    clear: both;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
 .story {
-    border: 1px solid red;
-    width: 40%;
     float: left;
-    padding: .5em;
+    width: 50%;
+    padding-left: .5em;
+    padding-right: .5em;
+    height: 32em;
 }
 
 .story img {
     width: 100%;
+}
+
+.story h2.story-title, .story p.story-issue {
+    font-family: "Gill Sans";
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: .15em;
+}
+
+.story h2.story-title {
+    font-size: 1em;
+}
+
+.story p.story-issue {
+    font-size: .55em;
+    font-
+}
+
+.story p.story-caption {
+    font-family: "Garamond";
+    font-size: .9em;
+    line-height: 1.2em;
+}
+
+.story a {
+    font-size: .5em;
+    color: #cb1511;
+    text-decoration: none;
+}
+
+.city-guides {
+    text-align: center;
+}
+
+.thumbnail {
+    border: 1px solid red;
+    width: 12%;
+    float: left;
+    margin: 1em;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+
+footer {
+    clear: both;
 }
 
 
