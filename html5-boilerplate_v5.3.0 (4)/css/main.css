@@ -110,6 +110,8 @@ body {
     line-height: 1.4em;
     min-width: 1200px;
     background: #f8f8f8;
+    padding: 0em;
+    border: 1px solid red;
 }
 
 /* Top Bar */
@@ -221,9 +223,9 @@ header h1 {
     display: none;
     position: absolute;
     text-align: left;
-    left: -6em;
-    font-size: .8em;
+    left: -4.5em;
     width: 190px;
+    font-size: .8em;
     padding: 1.5em;
     font-size: 1em;
     background: #f8f8f8;
@@ -281,6 +283,7 @@ header h1 {
 
 .slideshow {
     margin-top: 4em;
+    border: 1px solid red;
 }
 
 .slideshow .main-image {
@@ -292,13 +295,13 @@ header h1 {
 }
 
 .slideshow .main-image img {
-    display: block;
+    width: 100%;
 }
 
 .slideshow .main-image figcaption {
     position: absolute;
     bottom: 0;
-    width: 50%;
+    width: 100%;
     padding: 1em;
     background: hsla(359, 0%, 0%, 0.4);
     color: #fff;
@@ -335,9 +338,8 @@ header h1 {
 
 .section-bar {
     clear: both;
-    position: relative;
-    margin-bottom: 4em;
     line-height: 2em;
+    position: relative;
 }
 
 .section-bar ul {
@@ -347,33 +349,45 @@ header h1 {
 
 .section-bar li {
     display: inline-block;
+    padding: 1em;
 }
 
 .section-bar a {
     text-decoration: none;
+    color: #000;
 }
 
-#left-link {
+.left-link {
   position: absolute;
   top: 0px;
-  left: 100px;
+  left: 115px;
+  font-size: .7em;
 }
 
-#center-link {
+.center-link {
     position: absolute;
-    top: 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, -20%);
 }
 
-#right-link {
+.center-link a {
+    padding-bottom: .3em;
+    border-bottom: 2px solid black;
+}
+
+.right-link {
     position: absolute;
-    top: 0px;
-    right: 100px;
+    right: 0%;
+    top: 50%;
+    transform: translate(-65%, -20%);
 }
 
 /* Stories */
 
 .main-content {
     clear: both;
+    margin-top: 7em;
     margin-left: 10em;
     margin-right: 10em;
 }
@@ -384,6 +398,7 @@ header h1 {
     padding-left: .5em;
     padding-right: .5em;
     height: 32em;
+    margin-bottom: 2em;
 }
 
 .story img {
@@ -424,18 +439,20 @@ header h1 {
 
 .city-guides {
     position: absolute;
-    top: 0;
-    left: 150px;
-    width: 1200px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-40%, 0%);
+    width: 100%;
+    margin-top: 7em;
 }
 
 .thumbnail {
-    width: 10em;
+    width: 12.2em;
     float: left;
     margin: 1em;
     background: #e3e3e3;
     line-height: .8em;
-    height: 11.75em;
+    height: 13em;
 }
 
 .thumbnail img {
@@ -460,7 +477,7 @@ header h1 {
 
 footer {
     clear: both;
-    margin-top: 20em;
+    margin-top: 25em;
     background: #e3e3e3;
 }
 
