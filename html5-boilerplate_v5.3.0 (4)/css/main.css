@@ -103,7 +103,8 @@ html {
 }
 
 body {
-    margin: 0em auto;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Times, serif;
     line-height: 1.4em;
     min-width: 1200px;
@@ -184,6 +185,8 @@ header h1 {
     text-transform: uppercase;
     letter-spacing: .07em;
     z-index: 20;
+    margin-top: 3em;
+    margin-bottom: 1em;
 }
 
 .sub-header a {
@@ -223,7 +226,7 @@ header h1 {
     color: #000;
 }
 
-#site-nav-links li ul {
+.display-menu {
     display: none;
     position: absolute;
     text-align: left;
@@ -282,12 +285,7 @@ header h1 {
     transform: translateY(-15%);
     left: 3px;
 }
-
 /* Main Content Images */
-
-.slideshow {
-    margin-top: 4em;
-}
 
 .slideshow .main-image {
     margin: 0em;
@@ -383,7 +381,8 @@ header h1 {
     position: absolute;
     right: 0%;
     top: 50%;
-    transform: translate(-65%, -20%);
+    transform: translate(-85%, -5%);
+    font-size: .7em;
 }
 
 /* Stories */
@@ -430,7 +429,7 @@ header h1 {
     line-height: 1.2em;
 }
 
-.story a {
+.story .story-link {
     font-size: .5em;
     color: #cb1511;
     text-decoration: none;
@@ -447,6 +446,10 @@ header h1 {
     transform: translate(-38%, 0%);
     width: 100%;
     margin-top: 7em;
+}
+
+#city-select li:hover ul {
+    display: block;
 }
 
 .thumbnail {

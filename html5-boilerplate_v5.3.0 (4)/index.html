@@ -28,7 +28,7 @@
             <li id="sitesearch">
               <form>
                 Search:
-                <input type="search sitesearch">
+                <input type="search sitesearch"><i class="fa fa-search" aria-hidden="true"></i>
               </form>
             </li>
             <li><a href="#">Login</a></li>
@@ -42,27 +42,35 @@
       </header>
       
       <section class="sub-header">
-       <nav class="main-nav">
-          <ul class="main-nav-section" id="date">
-            <li>Sun 24 Apr</li>
-          </ul>
-          <ul class="main-nav-section" id="site-nav-links">
-            <li id="magazine"><a href="#">Magazine</a>
-              <ul>
-                <li><a>Subscribe</a></li>
-                <li><a>Current Issue</a></li>
-                <li><a>All Issues</a></li>
+       <nav>
+          <ul class="main-nav">
+            <li>
+              <ul class="main-nav-section" id="date">
+                <li>Sun 24 Apr</li>
               </ul>
             </li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Films</a></li>
-            <li><a href="#">Stories</a></li>
-          </ul>
-          <ul class="main-nav-section" id="subscribe">
-            <a href="#"><div id="ellipse">
-              <li>Subscribe<i class="fa fa-chevron-down" aria-hidden="true"></i></li>
-            </div></a>
+            <li>
+              <ul class="main-nav-section" id="site-nav-links">
+                <li id="magazine"><a href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i>Magazine</a>
+                  <ul class="display-menu">
+                    <li><a>Subscribe</a></li>
+                    <li><a>Current Issue</a></li>
+                    <li><a>All Issues</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">Stories</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="main-nav-section" id="subscribe">
+                <a href="#"><div id="ellipse">
+                  <li>Subscribe<i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                </div></a>
+              </ul>
+            </li>
           </ul>
        </nav>
       </section>
@@ -91,7 +99,7 @@
 
       <section class="section-bar">
         <ul class="section-links, left-link">
-          <li><a href="#">View All Stories</a></li>
+          <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i>View All Stories</a></li>
         </ul>
         <ul class="section-links, center-link">
           <li><a href="#">Stories</a></li>
@@ -104,48 +112,48 @@
 
       <section class="main-content">
         <article class="story">
-          <img src="img/story-1.jpg" alt="current issue">
+          <a><img src="img/story-1.jpg" alt="current issue"></a>
           <p class="story-issue">Issue Nineteen / Contents</p>
           <h2 class="story-title">Kinfolk Issue Nineteen: The Adrenaline Issue</h2>
           <p class="story-caption">Our spring edition explores our relationship with adrenaline and its vital contribution to our quality of life. After all, finding joy in knuckle-whitening moments can be enlivening, not immobilizing.</p>
-          <a href="#">Read More</a>
+          <a class="story-link" href="#">Read More</a>
         </article>
 
          <article class="story">
-          <img src="img/story-2.jpg" alt="architect walking">
+          <a><img src="img/story-2.jpg" alt="architect walking"></a>
           <p class="story-issue">Issue Nineteen / Interview </p>
           <h2 class="story-title">A Day in the Life: Frida Escobedo</h2>
           <p class="story-caption">Whether it's a hotel, gallery or a public space, Mexican architect Frida Escobedo's work carries energy without adhering to one specific style.</p>
-          <a href="#">Read More</a>
+          <a class="story-link" href="#">Read More</a>
         </article>
 
          <article class="story">
-          <img src="img/story-3.jpg" alt="composer">
+          <a><img src="img/story-3.jpg" alt="composer"></a>
           <p class="story-issue">Issue Nineteen / Essay</p>
           <h2 class="story-title">Keeping Tempo: Henrik Vibskov</h2>
           <p class="story-caption">From creating outlandish fashion shows to drumming in several bands, Henrik Vibskov keeps things unpredictable with his freestyle appraoch.</p>
-          <a href="#">Read More</a>
+          <a class="story-link" href="#">Read More</a>
         </article>
 
          <article class="story">
-          <img src="img/story-4.jpg" alt="prank">
+          <a><img src="img/story-4.jpg" alt="prank"></a>
           <p class="story-issue">Issue Nineteen / Photo Essay</p>
           <h2 class="story-title">Prankster's Paradise</h2>
           <p class="story-caption">To even the playing field and invoke mirth for your co-worker, arrive at the office early to set up some of these dastardly deeds.</p>
-          <a href="#">Read More</a>
+          <a class="story-link" href="#">Read More</a>
         </article>
       </section>
 
 
       <section class="section-bar">
         <ul class="section-links, left-link">
-          <li><a href="#">View All Cities</a></li>
+          <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i>View All Cities</a></li>
         </ul>
         <ul class="section-links, center-link">
           <li><a href="#">City Guides</a></li>
         </ul>
         <ul class="section-links, right-link">
-          <li><a href="#">City</a></li>
+          <li><a href="#" id="city-select">City</a></li>
           <li><a href="#">Show Me</a></li>
         </ul>
       </section>
@@ -153,7 +161,7 @@
       <div class="container-city-guides">
       <section class="city-guides">
          <article class="thumbnail">
-          <img src="img/thumbnail-1.jpg" alt="Seattle">
+          <a><img src="img/thumbnail-1.jpg" alt="Seattle"></a>
           <h2 class="caption-title">Seattle: Peter Miller Architecture</h2>
           <p class="caption-caption">Peter Miller Books is filled with sleek writing utensils, Finnish house...</p>
         </article>
@@ -186,7 +194,7 @@
 
       <footer class="top-bar">
           <ul class="top-bar-content left-content">
-            <li>Kinfolk</li>
+            <li><i class="fa fa-copyright" aria-hidden="true"></i>Kinfolk</li>
           </ul>
           <ul class="top-bar-content center-content">
             <li>About Us</li>
