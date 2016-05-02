@@ -103,15 +103,12 @@ html {
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0em;
+    margin: 0em auto;
     font-family: Times, serif;
     line-height: 1.4em;
     min-width: 1200px;
     background: #f8f8f8;
     padding: 0em;
-    border: 1px solid red;
 }
 
 /* Top Bar */
@@ -143,19 +140,26 @@ body {
     color: #000;
 }
 
-.top-bar #social-media {
+.top-bar .left-content {
     position: absolute;
     left: 100px;
     top: -7px;
 }
 
-.top-bar #site-links {
+.top-bar .center-content {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -75%);
+}
+
+.top-bar .right-content {
     position: absolute;
     right: 100px;
     top: -7px;
 }
 
-#sitesearch {
+.top-bar .sitesearch {
     margin-right: 5em;
 }
 
@@ -283,7 +287,6 @@ header h1 {
 
 .slideshow {
     margin-top: 4em;
-    border: 1px solid red;
 }
 
 .slideshow .main-image {
@@ -441,13 +444,13 @@ header h1 {
     position: absolute;
     top: 0%;
     left: 50%;
-    transform: translate(-40%, 0%);
+    transform: translate(-38%, 0%);
     width: 100%;
     margin-top: 7em;
 }
 
 .thumbnail {
-    width: 12.2em;
+    width: 12%;
     float: left;
     margin: 1em;
     background: #e3e3e3;
@@ -476,11 +479,10 @@ header h1 {
 }
 
 footer {
-    clear: both;
-    margin-top: 25em;
+    clear:;
+    margin-top: 40em;
     background: #e3e3e3;
 }
-
 
 
 /* Page Articles */
